@@ -25,5 +25,7 @@ for line in source_file:
     if len(line) > 10:
         results = re.match('(.+@(.+));(.+)', line)
         process = multiprocessing.Process(target=check_email,
-                                          args=(results.group(1), results.group(3), results.group(2)))
+                                          args=[results.group(1),
+                                                results.group(3),
+                                                results.group(2)])
         process.start()
