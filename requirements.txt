@@ -3,7 +3,7 @@ chardet==2.2.1
 colorama==0.2.5
 command-not-found==0.3
 coverage==4.0.2
-html5lib==0.999
+html5lib==0.99999999
 language-selector==0.1
 parse==1.6.6
 parse-type==0.3.4
